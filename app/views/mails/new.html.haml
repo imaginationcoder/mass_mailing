@@ -1,0 +1,25 @@
+= form_tag :action=>'send_m_mail' do
+  %br/
+  = label_tag 'Subject'
+  = text_field_tag 'subject'
+  %br/
+  = label_tag 'emails'
+  = text_area_tag 'emails'
+  %div= submit_tag 'Send',  data: {confirm: "Are you sure?"}
+:css
+  input {
+      border: 1px solid #848484;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+      outline:0;
+      height:25px;
+      width: 275px;
+      padding-left:10px;
+      padding-right:10px;
+  }
+  textarea{
+      width: 800px !important;
+      height: 400px !important;
+      overflow-y: auto !important;
+  }
