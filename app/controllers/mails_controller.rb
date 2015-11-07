@@ -9,6 +9,6 @@ class MailsController < ApplicationController
       Notifier.welcome_mail(email, subject).deliver
     end
     flash[:notice] = 'Successfully sent emails'
-    redirect_to '/'
+    redirect_to root_url
   end
 end
